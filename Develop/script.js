@@ -97,9 +97,10 @@ var specialCharacters = [
   "~"
 ];
 
-var passLength = parseInt(prompt("How many character would you like your password to be? (must be within 8 and 128) "), 10);
+
 
 function inputData() {
+  var passLength = parseInt(prompt("How many character would you like your password to be? (must be within 8 and 128) "), 10);
 if (passLength < 8 || passLength > 128) {
   alert("password characters must be between 8 and 128");
   return null;
